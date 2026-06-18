@@ -79,33 +79,55 @@
         background-size: cover;
       "
     >
+
+    <section class="py-5 bg-light">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <span class="badge bg-warning text-dark mb-3"
-              >Conversion focused</span
-            >
-            <h1 class="display-4 fw-bold">
-              Build a landing page that converts visitors into customers
-            </h1>
-            <p class="lead mb-4">
-              Create powerful campaigns with fast-loading hero content, clear
-              messaging, and meaningful calls to action.
-            </p>
-            <div class="d-flex flex-column flex-sm-row gap-2">
-              <a href="#" class="btn btn-primary btn-lg">Start Free Trial</a>
-              <a href="#" class="btn btn-outline-light btn-lg">View Demo</a>
-            </div>
-          </div>
-          <div class="col-lg-5 text-center mt-4 mt-lg-0">
-            <div
-              class="bg-white bg-opacity-10 border border-white border-opacity-25 rounded-4 p-4"
-            >
-              <h2 class="h4 text-white mb-3">Trusted by marketers worldwide</h2>
-              <p class="mb-0">
-                “The hero section helped us increase engagement and drive more
-                leads within days.”
-              </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow-sm">
+              <div class="card-body p-4">
+                <div class="text-center mb-4">
+                  <h2 class="h3 mb-1">Register for early access</h2>
+                  <p class="text-muted mb-0">
+                    Join now and stay ahead with marketing-ready landing page tools.
+                  </p>
+                </div>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="registerFullName" class="form-label">Full name</label>
+                      <input type="text" class="form-control" id="registerFullName" placeholder="Jane Doe" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="registerEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="registerEmail" placeholder="you@example.com" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="registerPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="registerPassword" placeholder="Enter password" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="registerConfirmPassword" class="form-label">Confirm password</label>
+                      <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm password" required />
+                    </div>
+                    <div class="col-12">
+                      <label for="registerCompany" class="form-label">Company (optional)</label>
+                      <input type="text" class="form-control" id="registerCompany" placeholder="Company name" />
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="registerTerms" required />
+                        <label class="form-check-label" for="registerTerms">
+                          I agree to the terms and privacy policy
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary btn-lg w-100">Register now</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
