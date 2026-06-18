@@ -1,0 +1,38 @@
+:root {
+  --bg: #ffffff;
+  --text: #ffffff;
+  --card-bg: #ffffff;
+  --nav-bg: #f8f9fa;
+  --muted: #6c757d;
+  --primary: #0d6efd;
+}
+.dark {
+  --bg: #0b1220;
+  --text: #ffffff;
+  --card-bg: #0f1724;
+  --nav-bg: #0b1220;
+  --muted: #9aa6bb;
+  --primary: #66b2ff;
+}
+html, body {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+.navbar, .bg-light { background-color: var(--nav-bg) !important; }
+.navbar .nav-link, .navbar-brand, .navbar .dropdown-item { color: var(--text) !important; }
+.card, .card-body, .table, table { background-color: var(--card-bg) !important; color: var(--text) !important; }
+.text-muted { color: var(--muted) !important; }
+.btn-primary { background-color: var(--primary) !important; border-color: var(--primary) !important; }
+.btn-outline-light { color: var(--text) !important; border-color: rgba(255,255,255,0.12) !important; }
+/* small tweaks for striped table in dark */
+.table-striped tbody tr:nth-of-type(odd) { background-color: rgba(255,255,255,0.02) !important; }
+
+/* Forceful overrides when .dark is present to beat other specific selectors */
+.dark html, .dark body { background-color: var(--bg) !important; color: var(--text) !important; }
+.dark .navbar, .dark .bg-light { background-color: var(--nav-bg) !important; }
+.dark .navbar .nav-link, .dark .navbar-brand, .dark .navbar .dropdown-item { color: var(--text) !important; }
+.dark .card, .dark .card-body, .dark .table, .dark table { background-color: var(--card-bg) !important; color: var(--text) !important; }
+.dark .text-muted { color: var(--muted) !important; }
+.dark .btn-primary { background-color: var(--primary) !important; border-color: var(--primary) !important; }
+.dark .btn-outline-light { color: var(--text) !important; border-color: rgba(255,255,255,0.12) !important; }
+.dark .table-striped tbody tr:nth-of-type(odd) { background-color: rgba(255,255,255,0.02) !important; }
