@@ -1,0 +1,70 @@
+/* Body Styles */
+body {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+/* Form Container */
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form Label */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Form Control Focus State */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Range Value Display */
+.range-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Invalid Feedback Base */
+.invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Invalid Feedback Display for Invalid Fields */
+.form-control.is-invalid ~ .invalid-feedback,
+.form-select.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+/* Phone Invalid Feedback Override */
+#phoneInvalid {
+  display: none !important;
+}
