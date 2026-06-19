@@ -1,0 +1,12 @@
+.landing-hero {
+  background:
+    linear-gradient(180deg, rgba(13, 110, 253, 0.8), rgba(15, 23, 42, 0.92)),
+    url("https://cdn.sanity.io/images/6znhzi10/production/472c24bb3cd858319a296640bbc4cd6890e7b357-2354x1280.jpg?w=768&auto=format?")
+      center/cover no-repeat;
+  background-size: cover;
+}
+
+/* Custom landing page overrides */
+.landing-hero .badge {
+  opacity: 0.95;
+}
