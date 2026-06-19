@@ -1,5 +1,32 @@
 // Form validation and submission handling for patient registration form
 
+const themeToggleBtn = document.getElementById("themeToggle");
+const prefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+const savedTheme = localStorage.getItem("theme");
+const root = document.documentElement;
+const isDark = savedTheme ? savedTheme === "dark" : prefersDark;
+
+function applyTheme(dark) {
+  root.classList.toggle("dark", dark);
+  if (themeToggleBtn) themeToggleBtn.textContent = dark ? "☀️" : "🌙";
+  if (themeToggleBtn)
+    themeToggleBtn.title = dark
+      ? "Switch to light mode"
+      : "Switch to dark mode";
+}
+
+applyTheme(isDark);
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", function () {
+    const nextDark = !root.classList.contains("dark");
+    localStorage.setItem("theme", nextDark ? "dark" : "light");
+    applyTheme(nextDark);
+  });
+}
+
 // อัปเดต display ของ range slider
 const ageInput = document.getElementById("age");
 const ageDisplay = document.getElementById("ageDisplay");
